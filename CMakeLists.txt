@@ -4,12 +4,12 @@ project(OpenGLPractice)
 # set project variables
 set(ldir ${CMAKE_CURRENT_SOURCE_DIR}/libs)
 
-# find packages here
+
+add_subdirectory(libs/glad)
 
 # includes
 include_directories(${ldir})
 include_directories(${ldir}/glfw/include)
-include_directories(${ldir}/glad/include)
 
 # find header & source
 file(GLOB_RECURSE HEADER "include/*.h")
@@ -27,4 +27,5 @@ source_group("Source src"     FILES ${SOURCE})
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
     ${ldir}/glfw/src/libglfw.so
+    glad
 )
