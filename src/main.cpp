@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    glfwTerminate();
     return 0;
 }
 
