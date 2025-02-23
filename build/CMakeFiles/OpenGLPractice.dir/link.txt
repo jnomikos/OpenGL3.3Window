@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/OpenGLPractice.dir/src/main.cpp.o -o OpenGLPractice  -Wl,-rpath,/home/john/repos/opengl_window_practice/libs/glfw/src /home/john/repos/opengl_window_practice/libs/glfw/src/libglfw.so 
